@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	printf("The size of char: %zu byte(s)\n", sizeof(char));
+	printf("Size of a char: %zu byte(s)\n", sizeof(char));
 	return (0);
 }
