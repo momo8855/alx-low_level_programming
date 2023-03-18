@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+/**
+* main - Entry Point
+*
+* Description: print base 16
+*
+* Return: 0 Always (Success)
+*/
 int main(void)
 {
 	char n;
