@@ -19,16 +19,22 @@ void times_table(void)
 			if (product < 10)
 			{
 				_putchar(product + 48);
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (col != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+				}
 			}
 			else
 			{
 				_putchar((product / 10) + 48);
 				_putchar((product % 10) + 48);
-				_putchar(',');
-				_putchar(' ');
+				if (col != 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
