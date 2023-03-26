@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * print_to_98: Entry Point
+  * print_to_98 - Entry Point
   *
   * Description: print to 98 forward and backward
   *
