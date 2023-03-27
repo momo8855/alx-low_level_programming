@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * more-numbers - Entry Point
+  * more_numbers - Entry Point
   *
   * Description: 0-14 10 times
   *
