@@ -7,21 +7,32 @@
   *
   * Return: encoded string
   */
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *result = str;
-	char *leet_chars = "aAeEoOtTlL";
-	char *leet_replacements = "44330771";
+	int i, c = 0;
+	int sl[] = {97, 101, 111, 116, 108};
+	int ul[] = {65, 69, 79, 84, 76};
+	int n[] = {52, 51, 48, 55, 49};
 
-	for (int i = 0; leet_chars[i] != '\0'; i++)
+	/*iterate values in array s*/
+	while (s[c] != '\0')
 	{
-		for (int j = 0; result[j] != '\0'; j++)
+		/**
+		 * loop through array value five times
+		 * to check if the value is equal to
+		 * any small letter in array sl or
+		 * upper letter in array ul and if it
+		 * is replace it with the value in array n
+		*/
+		for (i = 0; i < 5; i++)
 		{
-			if (result[j] == leet_chars[i])
+			if (s[c] == sl[i] || s[c] == ul[i])
 			{
-				result[j] = leet_replacements[i];
+				s[c] = n[i];
+				break;
 			}
 		}
+		c++;
 	}
-	return (result);
+	return (s);
 }
