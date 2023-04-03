@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 	while (*s != '\0' && flag)
 	{
 		flag = 0;
-		for (*a = accept; *a != '\0'; a++)
+		for (a = accept; *a != '\0'; a++)
 		{
 			if (*s == *a)
 			{
@@ -27,8 +27,8 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		s++
+		s++;
 	}
-	return (count)
+	return (count);
 
 }
