@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-  * is_divisabel - check if divisable
+  * is_divisable - check if divisable
   *
   * @n: number to be checked
-  * divisor: the divisor
+  * @divisor: the divisor
   * Return: returns 1 if n is divisible by divisor, otherwise it returns 0
   */
 int is_divisable(int n, int divisor)
@@ -18,12 +18,12 @@ int is_divisable(int n, int divisor)
 	}
 	else
 	{
-		return is_divisable(n, divisor - 1);
+		return (is_divisable(n, divisor - 1));
 	}
 }
 
 /**
-  * int is_prime_helper - check if n is prime
+  * is_prime_helper - check if n is prime
   *
   * @n: number to be checked
   * @divisor: the divisor to test
@@ -51,7 +51,7 @@ int is_prime_helper(int n, int divisor)
 }
 
 /**
-  * is_prime_numbers - check if n is prime
+  * is_prime_number - check if n is prime
   *
   * @n: number to be checked
   *
@@ -59,5 +59,5 @@ int is_prime_helper(int n, int divisor)
   */
 int is_prime_number(int n)
 {
-	return (is_prime_helper(n, n-1));
+	return (is_prime_helper(n, n - 1));
 }
