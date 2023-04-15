@@ -52,8 +52,12 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
+	else if (n >= 16777216)
+	{
+		return (sqrt_helper(n, 1, 5000));
+	}
 	else 
 	{	
-		return (sqrt_helper(n, 1, 5000));
+		return (sqrt_helper(n, 1, n));
 	}
 }
