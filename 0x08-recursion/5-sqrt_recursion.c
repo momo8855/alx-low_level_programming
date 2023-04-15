@@ -11,16 +11,15 @@ int sqrt_helper(int n, int low, int high)
 {
 	int mid, square;
 
-	if (low > high)
-	{
-		return (-1);
-	}
-
 	mid = (low + high) / 2;
 	square = mid * mid;
 	if (square == n)
 	{
 		return (mid);
+	}
+	else if (low == high)
+	{
+		return (-1);
 	}
 	else if (square < n)
 	{
@@ -43,7 +42,18 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 	{
-	return (-1);
+		return (-1);
 	}
-	return (sqrt_helper(n, 0, n));
+	else if (n == 0)
+	{
+		return (0);
+	}
+	else if (n == 1)
+	{
+		return (-1);
+	}
+	else 
+	{	
+		return (sqrt_helper(n, 1, 5000));
+	}
 }
