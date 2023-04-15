@@ -26,7 +26,7 @@ int isNum(char num[])
   * @argc: number of arguments
   * @argv: vector of arguments
   *
-  * Return: 0 or 1 
+  * Return: 0 or 1
   */
 int main(int argc, char *argv[])
 {
